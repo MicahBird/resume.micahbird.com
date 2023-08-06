@@ -1,0 +1,20 @@
+            <section class="section projects-section">
+                <h2 class="section-title"><i class="fa {{ .Site.Params.projects.icon }}"></i>{{ i18n "projects" }}</h2>
+                <div class="intro">
+                    <p>{{ with .Site.Params.projects.intro }}{{ . | markdownify }}{{ end }}</p>
+                </div><!--//intro-->
+				{{ range .Site.Params.projects.list }}
+                <div class="item">
+                    <span class="project-title"><a href="{{ .url }}">{{ .title }}</a></span> - <span class="project-tagline">{{ with .tagline }}{{ . | markdownify }}{{ end }}</span><br>
+
+                    {{ if .custom }}
+                      {{ if .wallpaperGenerator }}
+                      <span class="project-tagline"><a onclick="draw()" href="javascript:void(0);"><strong>Click me to generate a new one!</strong></a></span><br>
+                      <canvas width="200" height="121"></canvas>
+                      {{ end }}
+                      {{ else }}
+                     <a href="{{ .url }}"><img class="screenshot" src="{{ .Site.BaseURL }}assets/images/{{ .screenshot }}" alt="{{ .title }}" /></a>
+                    {{ end }}
+                </div><!--//item-->
+				{{ end }}
+            </section><!--//section-->

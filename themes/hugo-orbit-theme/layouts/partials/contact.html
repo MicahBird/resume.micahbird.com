@@ -1,0 +1,15 @@
+            <div class="contact-container container-block">
+                <ul class="list-unstyled contact-list">
+				{{ range .Site.Params.contact.list }}
+                    {{ if eq .class "email" }}
+                        <li class="{{ .class }}"><i class="fa {{ .icon }}"></i><a href="{{ .url }}">{{ .title }}</a>
+                          <div style="text-indent: 5px;"><i class="fa {{ .pgp_icon }}"></i><a href="{{ .pgp }}">Public PGP Key</a></br>
+                            <small>{{ with .pgp_fingerprint }}{{ . | markdownify }}{{ end }}</small>
+                          </div>
+                        </li>
+                    {{ else }}
+                        <li class="{{ .class }}"><i class="fa {{ .icon }}"></i><a href="{{ .url }}">{{ .title }}</a></li>
+                    {{ end }}
+				{{ end }}
+                </ul>
+            </div><!--//contact-container-->

@@ -1,0 +1,471 @@
+# Page settings
+
+baseurl = "https://resume.micahbird.com/"
+languageCode = "en-us"
+title = "Micah Bird Resume"
+theme = "hugo-orbit-theme"
+
+# Do not build files for websites. Need them? Set to false
+disableRSS = true
+disableSitemap = true
+disable404 = true
+
+[params]
+
+    title = "Micah Bird Resume"
+
+# Meta
+    description = "Micah Bird Resume"
+    author = "Micah Bird"
+
+# Theme styles
+
+    # The original template comes with 6 colour schemes. You may choose styles below.
+    # "styles.css", "styles-2.css", "styles-3.css", "styles-4.css", "styles-5.css", "styles-6.css"
+    # are available. Also the source LESS files are included so
+    # it’s quick and easy to change the styling and colour scheme.
+
+    styles = "styles-8.css"
+
+# Sidebar sections
+
+    # Profile section
+    [params.profile]
+        name = "Micah Bird"
+        tagline = "All Around Tech Enthusiast"
+        #avatar = "profile.png"
+        #qr_code = "qr_code.png"
+
+    # Contact section
+    [params.contact]
+        enable = true
+
+        [[params.contact.list]]
+        class = "email"
+        icon = "fa-envelope" # https://fontawesome.com/icons
+        url = "mailto:inquiries@micahbird.com"
+        title = "inquiries@micahbird.com"
+        pgp = "https://micahbird.com/pgp.txt"
+        pgp_icon = "fa-key"
+        pgp_fingerprint = "Fingerprint: `6216 9B0C D146 4B1A B4C7 0085 C376 C5A2 B493 EF32`"
+
+        [[params.contact.list]]
+        class = "github"
+        icon = "fa-github"
+        url = "https://github.com/MicahBird/"
+        title = "MicahBird"
+
+        # [[params.contact.list]]
+        # class = "linkedin"
+        # icon = "fa-linkedin-square"
+        # url = "https://github.com/MicahBird/"
+        # title = "github.com/MicahBird"
+
+        #[[params.contact.list]]
+        #class = "skype"
+        #icon = "fa-phone"
+        #title = "drewjpotter"
+
+    # Education section
+    [params.education]
+        enable = true
+        title = "Education"
+
+        [[params.education.list]]
+        degree = "AP Computer Science"
+        college = "Stargate Charter School"
+        dates = "2020 - 2021"
+
+        [[params.education.list]]
+        degree = "Ansible for Absolute Beginners"
+        college = "KodeKloud"
+        dates = "Dec. 2021"
+
+        [[params.education.list]]
+        degree = "Hack the Dot"
+        college = "Galvanize Coding School"
+        dates = "2019"
+
+        [[params.education.list]]
+        degree = "Storytelling through Data Visualization"
+        college = "Galvanize Coding School"
+        dates = "2018"
+
+        [[params.education.list]]
+        degree = "Hack the Dot"
+        college = "Galvanize Coding School"
+        dates = "2018"
+
+        [[params.education.list]]
+        degree = "Hack the Dot"
+        college = "Galvanize Coding School"
+        dates = "2016"
+
+        [[params.education.list]]
+        # degree = ""
+        college = "Turing Coding School"
+        dates = "Sept. 2015 - Apr. 2016"
+
+    # Languages section
+    [params.language]
+        enable = true
+        title = "Languages"
+
+        [[params.language.list]]
+        language = "English"
+        level = "Native"
+
+        [[params.language.list]]
+        language = "French"
+        level = "Basic"
+
+    # Interests section
+    [params.interests]
+        enable = true
+        title = "Interests"
+
+        [[params.interests.list]]
+        interest = "Technology; RISC-V, MR/AR/VR; Mixed Reality, Augmented Reality, Virtual Reality. GODOT, AI; TensorFlow, DeepSpeech. C++, Linux; Arch Linux, Manjaro, Ubuntu *BSD, Shell scripting, Wayland, Ethical hacking, C#, Unity3d, Unreal Engine, Metasploit, Wireshark, Qt, KDE, Sway, Python, OpenCV, WebGL, OpenGL, Vulkan, OpenCL, Tor, Docker, Git, GitLab, Ansible."
+
+        [[params.interests.list]]
+        interest = "Music; Ableton, Audacity."
+
+        [[params.interests.list]]
+        interest = "Videography; Video Editing with DaVinci Resolve, Kdenlive."
+
+# Main body sections
+
+    # You may use markdown in summary, details and intro fields. But don't overdose, it's resume!:)
+
+    # Summary section
+    [params.summary]
+        enable = true
+        icon = "fa-user"
+        title = "Career Profile"
+        summary = "**Micah Bird** I have and always will be a tech enthusiast. From covertly jailbreaking my iPad Mini at 8 years old, to running a Kubernetes cluster now. Liberating everything from my Nintendo 3DS to a myriad of Android phones. Doing tech support for family businesses, from point of sales systems to website overhauls. Ever since discovering Ubuntu at the age of 10, I have been a Linux fanatic to this day. Installing Linux on anything and everything I can get my hands on."
+
+    #Reference section
+    [params.reference]
+        enable = true
+        icon = "fa-star"
+        title = "Accolades"
+        summary = "A current member of NHS, and have received student of the month awards for Science (Feb. 2021), Technology (Sept. 2021), Literature (Nov. 2021), Mathematics (Jan. 2022), and Outstanding French student of the year (2021 - 2022). I have also lettered in academics for 2020-2021 and 2021-2022."
+
+    #Reference section
+    [params.calendar]
+        enable = true
+        icon = "fa-calendar"
+        github = "MicahBird"
+
+    # Experiences section
+    [params.experiences]
+        enable = true
+        icon = "fa-briefcase"
+        title = "Work/Experience"
+
+        [[params.jobs.list]]
+        position = "Web Developer/IT Worker"
+        dates = "2014 - Present"
+        company = "Miller Excavation Inc."
+        details = "From overhauling the business' outdated website, to performing a full email migration, I have served as an Web Developer/IT Worker for Miller Excavation Inc. To see the finished product, go to [**millerexcavationinc.com**](https://millerexcavationinc.com). For a reference please contact **Dale Miller** via email at **dale@millerexcavationinc.com**"
+        screenshot = "miller-excavation.jpg"
+
+
+        [[params.jobs.list]]
+        position = "Web Developer/IT Worker"
+        dates = "2019 - Present"
+        company = "Bostrom Law Inc."
+        details = "Providing a overhauled website, and applied security patches to a majorly outdated site. The completed site can be viewed at [**bostromlaw.com**](https://bostromlaw.com). For a reference please contact **Bill Bostrom** via email at **wbostrom@bostromlaw.com**"
+        screenshot = "bostrom-law.jpg"
+
+        [[params.jobs.list]]
+        position = "Web Developer"
+        dates = "2017 - 2022"
+        company = "Codex Spoken Here"
+        details = "Building a website from the ground up to bring a business into the modern age. The website is currently under construction and not ready for public access."
+        screenshot = "codex-spoken-here.jpg"
+
+        [[params.jobs.list]]
+        position = "Audio Engineer"
+        dates = "2018 - 2019"
+        #company = "Bostrom Law Inc."
+        details = "Providing Ableton skills, and collaborating with others on new technologies, such as ProPresenter. Also, the deployment of a printer system in the midst of a time crunch. For a reference please contact **Beto Archuleta** via email at **beto@landingplacechurch.com**"
+
+        [[params.jobs.list]]
+        position = "Videography and Video Editor"
+        dates = "Oct. 2020 - Dec. 2020"
+        company = "Coach Alanna"
+        details = "Using the video editing program DaVinci Resolve to edit a series of weekly videos for the Coach Alanna business."
+
+        [[params.jobs.list]]
+        position = "Videography and Video Editor"
+        dates = "2017 - Present"
+        company = "The Old Map Gallery"
+        details = "Producing and editing bi-monthly videos for the business. As well as video adaptations of the business's podcast."
+
+    # Projects section
+    [params.projects]
+        enable = true
+        icon = "fa-archive"
+        title = "Projects"
+        intro = "**A list of side projects**"
+
+        [[params.projects.list]]
+        title = "A Custom Linux-Based Music Player"
+        url = "/assets/images/music.jpg"
+        tagline = "Using a Raspberry Pi Zero, I have created custom a low power consuming internet connected player."
+        screenshot = "music.jpg"
+
+        [[params.projects.list]]
+        title = "My Homelab Kubernetes Cluster"
+        url = "/assets/images/k8s.jpg"
+        tagline = "A multi-node, microk8s cluster. Self hosting a myriad of services that are safely accessible from the internet."
+        screenshot = "k8s.jpg"
+
+        [[params.projects.list]]
+        title = "Terminal Takeover"
+        url = "/assets/images/terminal.jpg"
+        tagline = "In a quest to be as efficient as possible, I have been creating and utilizing as many terminal user-interface (TUIs) programs as possible."
+        screenshot = "terminal.jpg"
+
+        [[params.projects.list]]
+        title = "Hardware Hacking"
+        url = "/assets/images/esp.jpg"
+        tagline = "I got my hands on an ESP32, and now I'm delving into micro-controllers."
+        screenshot = "esp.jpg"
+
+        [[params.projects.list]]
+        title = "A Portable, Lightweight Linux Environment"
+        url = "/assets/images/env-screenshot.jpg"
+        tagline = "Included in my [**dotfiles**](https://github.com/MicahBird/dotfiles) is an Ansible playbook that deploys a non-resource-intensive tilling window manager environment on any Linux distribution."
+
+        screenshot = "env-screenshot.jpg"
+        [[params.projects.list]]
+        title = "RFID/Radio Experimenting"
+        url = "/assets/images/rfid-radio.jpg"
+        tagline = "Dabbling in RFID and Software Defined Radio (SDR) technologies to see what is possible."
+        screenshot = "rfid-radio.jpg"
+
+        [[params.projects.list]]
+        title = "Computer Constructor"
+        url = "/assets/images/computer-build.jpg"
+        tagline = "Building the best bang-for-buck computers for myself, freinds, and family."
+        screenshot = "computer-build.jpg"
+
+        [[params.projects.list]]
+        title = "Various Computer Upgrades"
+        url = "/assets/images/update.jpg"
+        tagline = "From harvesting and upcycling needed cables/parts from old desktops, to upgrading a laptop from a hard drive to an SSD, there have been too many upgrades to catalog."
+        screenshot = "update.jpg"
+
+        [[params.projects.list]]
+        title = "Samsung TV Repair"
+        url = "/assets/images/tv-repair.jpg"
+        tagline = "The currently in progress repair of a flickering QLED Samsung TV."
+        screenshot = "tv-repair.jpg"
+
+        [[params.projects.list]]
+        custom = true
+        wallpaperGenerator = true
+        title = "A Command Line Wallpaper Generator"
+        url = "https://github.com/MicahBird/wallpaper-generator-cli"
+        tagline = "A command line implementation of [roytanck's wallpaper generator](https://github.com/roytanck/wallpaper-generator). Useful for generating a new wallpaper when you login to your computer."
+
+
+    # Skills section
+    [params.skills]
+        enable = true
+        icon = "fa-rocket"
+        title = "Skills & Proficiency"
+
+        [[params.skills.list]]
+        skill = "Linux/Unix"
+        icon = "fa-linux"
+        level = "95%"
+
+        [[params.skills.list]]
+        skill = "Command Line/Bash Skills"
+        icon = "fa-terminal"
+        level = "85%"
+
+        [[params.skills.list]]
+        skill = "Kubernetes (k8s)"
+        icon = "fa-server"
+        level = "78%"
+
+        [[params.skills.list]]
+        skill = "Docker"
+        icon = "fa-ship"
+        level = "75%"
+
+        [[params.skills.list]]
+        skill = "Webflow"
+        icon = "fa-html5"
+        level = "75%"
+
+        [[params.skills.list]]
+        skill = "Git"
+        icon = "fa-git"
+        level = "72%"
+
+        [[params.skills.list]]
+        skill = "Web Design"
+        icon = "fa-html5"
+        level = "70%"
+
+        [[params.skills.list]]
+        skill = "Hugo"
+        icon = "fa-file-code-o"
+        level = "64%"
+
+        [[params.skills.list]]
+        skill = "JavaScript"
+        icon = "fa-file-code-o"
+        level = "69%"
+
+        [[params.skills.list]]
+        skill = "Video Editing"
+        icon = "fa-video-camera"
+        level = "68%"
+
+        [[params.skills.list]]
+        skill = "Audacity"
+        icon = "fa-headphones"
+        level = "67%"
+
+        [[params.skills.list]]
+        skill = "Vi/Vim"
+        icon = "fa-file-text"
+        level = "60%"
+
+        [[params.skills.list]]
+        skill = "Python"
+        icon = "fa-file-code-o"
+        level = "55%"
+
+        [[params.skills.list]]
+        skill = "Ansible"
+        icon = "fa-file-code-o"
+        level = "40%"
+
+        [[params.skills.list]]
+        skill = "Wordpress"
+        icon = "fa-wordpress"
+        level = "40%"
+
+        [[params.skills.list]]
+        skill = "Github Actions"
+        icon = "fa-github-square"
+        level = "36%"
+
+        [[params.skills.list]]
+        skill = "Argo CD"
+        icon = "fa-code-fork"
+        level = "35%"
+
+        [[params.skills.list]]
+        skill = "Helm"
+        icon = "fa-file-code-o"
+        level = "29%"
+
+        [[params.skills.list]]
+        skill = "VLANs"
+        icon = "fa-shield"
+        level = "28%"
+
+        [[params.skills.list]]
+        skill = "Google App Script"
+        icon = "fa-google"
+        level = "24%"
+
+        [[params.skills.list]]
+        skill = "NGINX"
+        icon = "fa-file-code-o"
+        level = "23%"
+
+        [[params.skills.list]]
+        skill = "Ableton"
+        icon = "fa-headphones"
+        level = "21%"
+
+        [[params.skills.list]]
+        skill = "React Native"
+        icon = "fa-file-code-o"
+        level = "20%"
+
+        [[params.skills.list]]
+        skill = "Amazon Web Services (AWS)"
+        icon = "fa-amazon"
+        level = "16%"
+
+        [[params.skills.list]]
+        skill = "pfSense"
+        icon = "fa-server"
+        level = "15%"
+
+        [[params.skills.list]]
+        skill = "Micro-controllers"
+        icon = "fa-file-code-o"
+        level = "15%"
+
+        [[params.skills.list]]
+        skill = "Databases (SQL)"
+        icon = "fa-database"
+        level = "15%"
+
+        [[params.skills.list]]
+        skill = "Wiregaurd"
+        icon = "fa-shield"
+        level = "13%"
+
+        [[params.skills.list]]
+        skill = "OpenVPN"
+        icon = "fa-shield"
+        level = "12%"
+
+        [[params.skills.list]]
+        skill = "C"
+        icon = "fa-file-code-o"
+        level = "6%"
+
+        [[params.skills.list]]
+        skill = "WinRM"
+        icon = "fa-windows"
+        level = "5%"
+        
+        [[params.skills.list]]
+        skill = "Powershell"
+        icon = "fa-windows"
+        level = "5%"
+
+        [[params.skills.list]]
+        skill = "Java"
+        icon = "fa-file-code-o"
+        level = "5%"
+
+        [[params.skills.list]]
+        skill = "Emacs"
+        icon = "fa-file-text"
+        level = "5%"
+
+        [[params.skills.list]]
+        skill = "Cowsay"
+        icon = "fa-code"
+        level = "100%"
+
+        [[params.skills.list]]
+        skill = "Scratch"
+        icon = "fa-code"
+        level = "100%"
+
+    # Footer section
+
+    # The original template is released under the Creative Commons Attribution 3.0 License.
+    # Please keep the original attribution link when using for your own project.
+    # If you'd like to use the template without the attribution,
+    # you can check out other license options via template author's website: themes.3rdwavemedia.com
+    #
+    # As for Hugo port you may rewrite the "Ported for..." line with setting your name below.
+
+    [params.footer]
+        copyright = ""
